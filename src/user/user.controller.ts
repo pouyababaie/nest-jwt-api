@@ -12,7 +12,7 @@ export class UserController {
     return this.userService.getUserByUsername(param.username);
   }
 
-  @Post()
+  @Post('register')
   registerUser(@Body() createUserDto: CreateUserDto) {
     return this.userService.registerUser(createUserDto);
   }
