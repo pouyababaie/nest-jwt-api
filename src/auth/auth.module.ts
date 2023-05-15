@@ -4,10 +4,11 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { jwtConstants } from 'src/constants/constants';
 import { User, UserSchema } from 'src/user/schema/user.schema';
 import { AuthController } from './auth.controller';
-import { AuthService } from 'src/shared/auth.service';
+
 import { UserService } from 'src/user/user.service';
 import { LocalStrategyService } from 'src/strategy/local-strategy.service';
 import { HashService } from 'src/user/hash/hash.service';
+import { AuthService } from './auth.service';
 
 @Module({
   imports: [
